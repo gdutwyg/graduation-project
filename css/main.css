@@ -55,9 +55,9 @@ ul {
 
 /* summary概述 第一屏 */
 #fullpage #summary {
-      background: url(images/summary.png) no-repeat 0 0;
-      background-size: cover;
-      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="images/summary.png");
+      background: url(file:///E:/graduation-project/css/images/summary.png) no-repeat 0 0;
+      background-size: 100% 100%;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="file:///E:/graduation-project/css/images/summary.png");
       /*  background-size: cover; */
       /* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
           src='http://img0.bdstatic.com/img/image/6992fdda3cc7cd98d10273a6b34233fb80e7aec90cc.jpg',
@@ -70,6 +70,10 @@ ul {
 #summary p { 
       position: relative; 
       left: -120%;
+}
+#summary h3 { 
+      position: relative; 
+      top: -120%;
 }
 /* 摘要第二屏 */
 
@@ -95,9 +99,12 @@ ul {
       background: url(images/zigbee.png) no-repeat 0 0;
       background-size: 100% 100%;
       font-size: 16px;
+
 }
 #zigbee ul { 
       margin: 100px 100px 0px 100px; 
+       position: relative;
+      right:-120%;
 }
 #zigbee ul:before { 
       content: "";
@@ -135,6 +142,8 @@ ul {
       font-size: 20px;
       height:420px;
       text-align: left;
+      position: relative;
+      bottom:-120%;
 }
 #zigbee .zigbeeAbout>div {
       width: 480px;

@@ -13,18 +13,42 @@ $(function(){
                         if(index == 1){
                                 $('#summary').find('p')
                                 .animate( { left: '0' },1000);
-
+                                $('#summary').find('h3')
+                                .animate( { top: '0' },1000);
                         }
+                        if(index == 5){
+                                $('#zigbee .fp-tableCell').children('ul')
+                                .animate( { right: '0' },1000);
+                                $('#zigbee .fp-tableCell').children('div')
+                                .animate( { bottom: '0' },1000);
+                        }
+                        if(index == 6){
+                                $('#cloud').children('div').fadeIn(2000);
+
+                         }
+
+
 
 
                      },
           onLeave:   function(index, direction){
 
                         if(index == '1'){
-                                $('.summary').find('p').delay(500)
+                                $('#summary').find('p').delay(500)
                                 .animate({  left: '-120%' }, 1000);
-
+                                $('#summary').find('h3').delay(500)
+                                .animate({  top: '-120%' }, 1000);
                         }
+                        if(index == 5){
+                                $('#zigbee .fp-tableCell').children('ul').delay(500)
+                                .animate( { right: '-120%' },1000);
+                                $('#zigbee .fp-tableCell').children('div').delay(500)
+                                .animate( { bottom: '-120%' },1000);
+                        }
+                        if(index == 6){
+                                $('#cloud ').children('div').fadeOut(2000);
+
+                         }
                     }
 
 
