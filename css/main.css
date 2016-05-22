@@ -1,0 +1,186 @@
+body {
+  font-family: "Microsoft Yahei";
+
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+/*头部样式开始*/
+/* head头部 */
+.head{
+      position: fixed;
+      z-index: 1;
+      height: 80px;
+      background: white;
+      width: 100%;
+}
+.head .head-left {
+      float: left;
+}
+.head .head-right {
+      overflow: hidden; 
+      height: 80px;
+      line-height: 80px;
+}
+
+.head .head-right ul {
+      list-style-type: none;
+      float: right;
+}
+.head .head-right ul li {
+      float: left;
+      margin: 0 10px;
+}
+.head .head-right ul li a {
+      text-decoration: none;
+      padding: 6px 26px;
+      color: #43484c;
+      border-radius: 17px;
+}
+.head .head-right ul li a:hover {
+      background: #eee; 
+}
+.head .head-right ul .active a {
+      background: #00b1ff;
+      color: #fff;
+}
+
+
+#fullpage  .section {
+      text-align: center;
+      font: 40px "Microsoft Yahei";
+      color: #285caa;
+}
+
+/* summary概述 第一屏 */
+#fullpage #summary {
+      background: url(images/summary.png) no-repeat 0 0;
+      background-size: cover;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="images/summary.png");
+      /*  background-size: cover; */
+      /* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+          src='http://img0.bdstatic.com/img/image/6992fdda3cc7cd98d10273a6b34233fb80e7aec90cc.jpg',
+          sizingMethod='scale'); */
+}
+#fullpage #summary p {
+      margin: 10px 0 0 0;
+      padding: 0;
+}
+#summary p { 
+      position: relative; 
+      left: -120%;
+}
+/* 摘要第二屏 */
+
+#abstract{
+      background: url(images/abstract.png) no-repeat 0 0;
+      background-size: 100% 100%;
+      /*  background-size: cover; */
+}
+
+/* 传感器第三屏 */
+
+
+/* 客户端 第四屏*/
+#client {
+      background: url(images/client.png) no-repeat 0 0;
+      background-size: 100% 100%;
+
+}
+
+/* zigbee区域 第五屏*/
+
+#fullpage #zigbee{
+      background: url(images/zigbee.png) no-repeat 0 0;
+      background-size: 100% 100%;
+      font-size: 16px;
+}
+#zigbee ul { 
+      margin: 100px 100px 0px 100px; 
+}
+#zigbee ul:before { 
+      content: "";
+      display: block; 
+      width: 0;
+      clear: both;
+}
+#zigbee ul:after { 
+      content: "";
+      display: block; 
+      width: 0;
+      clear: both;
+}
+#zigbee ul li {
+      margin-left: 116px;
+      width: 230px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 15px;
+      border: 2px solid #285caa;
+      font-size: 20px;
+      float: left;
+      list-style-type: none;
+      cursor: pointer;
+}
+#zigbee  .zigbeeAbout ~ div {
+      display: none;
+}
+#zigbee ul .active {
+      background: #285caa;
+      color:white;
+}
+#zigbee .fp-tableCell>div {
+      margin: 20px 200px  ;
+      font-size: 20px;
+      height:420px;
+      text-align: left;
+}
+#zigbee .zigbeeAbout>div {
+      width: 480px;
+      float: left;
+}
+#zigbee .zigbeeAbout>div img {
+      display: block;
+      margin:auto;
+}
+
+
+/* cloud区域  第六屏*/
+#cloud{
+      background: url(images/cloud.png) no-repeat 0 0;
+      background-size: 100% 100%;
+}
+#cloud ul{
+      margin-top: 120px;
+}
+#cloud ul li {
+      margin-left: 116px;
+      width: 230px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 15px;
+      border: 2px solid #285caa;
+      font-size: 20px;
+      display: inline-block;
+      list-style-type: none;
+      cursor: pointer;
+}
+#cloud ul .active {
+      background: #285caa;
+      color:white;
+}
+#cloud .fp-tableCell>div {
+      margin: 20px 300px;
+      font-size: 20px;
+      height:420px;
+      text-align: left;
+
+}
+#cloud  .cloudAbout ~ div {
+      display: none;
+}
+#cloud >div li  { 
+      list-style: none;
+ 
+}
