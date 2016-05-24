@@ -23,7 +23,7 @@ $(function(){
                                 .animate( { bottom: '0' },1000);
                         }
                         if(index == 6){
-                                $('#cloud').children('div').fadeIn(2000);
+                                $('#cloud ').children('div').fadeIn(2000);
 
                          }
 

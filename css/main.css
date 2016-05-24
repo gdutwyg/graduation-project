@@ -14,6 +14,7 @@ ul {
       height: 80px;
       background: white;
       width: 100%;
+      overflow: hidden;
 }
 .head .head-left {
       float: left;
@@ -55,9 +56,9 @@ ul {
 
 /* summary概述 第一屏 */
 #fullpage #summary {
-      background: url(file:///E:/graduation-project/css/images/summary.png) no-repeat 0 0;
-      background-size: 100% 100%;
-      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="file:///E:/graduation-project/css/images/summary.png");
+      background: url(http://120.76.115.209/css/images/summary.png) ;
+      background-size: cover;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/summary.png");
       /*  background-size: cover; */
       /* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
           src='http://img0.bdstatic.com/img/image/6992fdda3cc7cd98d10273a6b34233fb80e7aec90cc.jpg',
@@ -78,9 +79,10 @@ ul {
 /* 摘要第二屏 */
 
 #abstract{
-      background: url(images/abstract.png) no-repeat 0 0;
+      background: url(http://120.76.115.209/css/images/abstract.png) no-repeat 0 0;
       background-size: 100% 100%;
       /*  background-size: cover; */
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/abstract.png");
 }
 
 /* 传感器第三屏 */
@@ -88,17 +90,19 @@ ul {
 
 /* 客户端 第四屏*/
 #client {
-      background: url(images/client.png) no-repeat 0 0;
+      background: url(http://120.76.115.209/css/images/client.png) no-repeat 0 0;
       background-size: 100% 100%;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/client.png");
 
 }
 
 /* zigbee区域 第五屏*/
 
 #fullpage #zigbee{
-      background: url(images/zigbee.png) no-repeat 0 0;
+      background: url(http://120.76.115.209/css/images/zigbee.png) no-repeat 0 0;
       background-size: 100% 100%;
       font-size: 16px;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/zigbee.png");
 
 }
 #zigbee ul { 
@@ -157,8 +161,9 @@ ul {
 
 /* cloud区域  第六屏*/
 #cloud{
-      background: url(images/cloud.png) no-repeat 0 0;
+      background: url(http://120.76.115.209/css/images/cloud.png) no-repeat 0 0;
       background-size: 100% 100%;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/cloud.png");
 }
 #cloud ul{
       margin-top: 120px;
@@ -184,6 +189,8 @@ ul {
       font-size: 20px;
       height:420px;
       text-align: left;
+     
+
 
 }
 #cloud  .cloudAbout ~ div {
