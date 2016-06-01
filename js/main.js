@@ -1,12 +1,12 @@
 $(function(){
-
+      
             
               
         // 全屏滚动开始
         $('#fullpage').fullpage({
           menu: "#menu",
           scrollingSpeed: 1e3,
-          anchors: ["page1", "page2", "page3", "page4", "page5","page6"],
+          anchors: ["page1", "page2", "page3", "page4", "page5","page6","page7"],
           loopBottom:true,
           loopTop:true,
           afterLoad: function(anchorLink,index){          
@@ -27,6 +27,8 @@ $(function(){
 
                          }
 
+     
+
 
 
 
@@ -43,7 +45,7 @@ $(function(){
                                 $('#zigbee .fp-tableCell').children('ul').delay(500)
                                 .animate( { right: '-120%' },1000);
                                 $('#zigbee .fp-tableCell').children('div').delay(500)
-                                .animate( { bottom: '-120%' },1000);
+                                .animate( { bottom: '-140%' },1000);
                         }
                         if(index == 6){
                                 $('#cloud ').children('div').fadeOut(2000);
@@ -72,8 +74,15 @@ $(function(){
           console.log(index);
             $('#cloud .fp-tableCell>div').eq(index).show().siblings('div').hide();
 
+        })
+          $(' #sensor ul li').click(function(){
+          $(this).addClass('active').siblings().removeClass('active');
+          var index=$(this).index();
+          console.log(index);
+            $('#sensor .fp-tableCell>div').eq(index).show().siblings('div').hide();
 
         })
+              
         
       })
 

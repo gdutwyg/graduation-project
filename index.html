@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>广东物联网实验室</title> 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/jquery-1.12.0.min.js"></script>
-  
-  
   <script type="text/javascript" src="js/jquery.fullpage.js"></script>
   <script src="js/main.js"></script>
   <!--[if lte IE 7]>
@@ -23,37 +19,117 @@
      </style>  
 
   <![endif]-->
- 
-
-
 </head>
 <body>
 <div class="head">
   <div class="head-left">
-    <a href="http://120.76.115.209/"><img src=""></a>
+    <a href="http://120.76.115.209/">
+      <img src="css/images/logo.png">
+    </a>
+    <a href="http://120.76.115.209/" class="logo">
+     Gdiotlab
+    </a>
+    
   </div>
   <div class="head-right">
     <ul id="menu">
       <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
       <li data-menuanchor="page2"><a href="#page2">系统总览</a></li>
       <li data-menuanchor="page3"><a href="#page3">传感器</a></li>
-      <li data-menuanchor="page4"><a href="#page4">客户端</a></li>
+      <li data-menuanchor="page4"><a href="#page4">PC客户端</a></li>
       <li data-menuanchor="page5"><a href="#page5">传输协议</a></li>
       <li data-menuanchor="page6"><a href="#page6">Device Cloud 设备云</a></li>
-      <li><a href="news.html">新闻动态</a></li>
+      <li data-menuanchor="page7"><a href="#page7">Android客户端</a></li>
+      <li><a href="test/index.php?m=page&a=index&id=1">新闻动态</a></li>
+
     </ul>
   </div>
 </div>
 <div id="fullpage">
     <div class="section" id="summary">
-    <h3>第一屏</h3>
      <p>广东物联网实验室</p>
      <p>气囊船舶下水技术</p>
      <p>气压监测系统介绍</p>
     </div>
     <div class="section " id="abstract" ></div>
-    <div class="section " > 第三屏</div>
-    <div class="section " id="client">第四屏</div>
+    <div class="section " id="sensor">
+       <ul>
+          <li class="active">MPX5700AP压力传感器</li>
+          <li>拉力传感器</li>
+          <li>产品特点</li>
+       </ul>
+       <div class="sensor-left">
+         <div>
+           <img src="css/images/sensor-01.png">
+         </div>
+         <div>
+               C1和C2为电源去耦电容，C3为输出端的滤波电容。
+              将传感器（ips）的输出电压通过A/D转换器转换成数字量，
+              再由微控制器计算出被测压力值，即可构成智能的压力测量系统。
+               为了简化电路设计，可以采用带A/D转换器的单片机。
+         </div>
+       </div>
+       <div class="sensor-cen">
+             无线传输称重仪，是一款新型的动态称重仪表，该称重仪将无线传输技术，动态测量技术有机结合，
+利用数字信号实现信号的传输与显示。该仪表有称重和显示仪表两大部分构成，称重部分由称重传感器
+和智能测量仪表组成，测量的数据通过无线发射模块向外发送，该部分用大容量蓄电池供用。显示仪表
+部分为一手持式仪表，采用可充锂电池供电，字符式液晶显示。无线传输称重仪既继承了我们现有的有
+线传输称重仪的优点，同时有克服了传输距离短，看干扰能力差和有线传输线容易被压坏等缺点，显示
+仪器具有体积小，重量轻，便于携带和使用等优点。
+       </div>
+       <div class="sensor-right">
+        <li>
+         1. 免许可证监管的无线通讯系统产品，其有效范围可达250米，深受用户喜爱，主题与手置设备，
+    信息双向，可实现高空远程控制。
+        </li>
+         <li>
+           2. 主体材质航空铝合金，强度高，质量轻，即使大吨位的测力环，主题也很轻。
+         </li>
+         <li>
+           3. 双纽手持操控仪，一纽控制度量制式，一纽控制电源开关。
+         </li>
+         <li>
+           4. 产品配备有标准碱性电池（电池使用寿命为850小时），若配备锂电池，使用寿命可达1600小时，
+   无需重复拆装，反复充电。
+         </li>
+         <li>
+           5. 计量单位为吨或千克，如有特殊要求也可提供计量单位采用其他制式的产品。
+         </li>
+         <li>
+           6. 可提供过载警报器。
+         </li>
+         <li>
+           7. 借助desktop controller软件包可以实现与个人电脑的连接和数据传输。
+         </li>
+         <li>
+           8. 所有型号规格产品都带有便携箱/储存箱。
+         </li>
+          
+
+
+
+
+
+
+
+
+        
+       </div>
+      </div>
+      <div class="section " id="pc-client">
+        <div class="slide">
+            <img src="css/images/client-01.png">
+        </div>
+        <div class="slide">
+            <img src="css/images/client-02.png">
+        </div>
+        <div class="slide">
+            <img src="css/images/client-03.png">
+        </div>
+        <div class="slide">
+            <img src="css/images/client-04.png">
+        </div>
+      </div>
     <div class="section  common" id="zigbee">
       <ul>
           <li class="active">zigbee的介绍</li>
@@ -124,19 +200,11 @@
         “设备云”（DeviceCloud）是一种以机器终端交互为核心的、网络化的应用服务。他通过M2M数据采集监控终端、以 无线通信 等为接入手段，为客户提供综合的信息化解决方案，以满足客户对监控、智慧调度、数据采集和测量等方面的信息化需求。</li>
       </div>
     </div>
-
-
-    
+    <div class="section common " id="android">
+      
+       <div class="copy-right">2016 广东物联网实验室</div>
+       <div class="copy-right"><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备16047805号-1</a></div>
+    </div>
 </div>
-
-
-
-
-
-
-
-    
-    
-
 </body>
 </html>

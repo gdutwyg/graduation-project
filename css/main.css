@@ -1,5 +1,6 @@
 body {
   font-family: "Microsoft Yahei";
+  
 
 }
 ul {
@@ -18,6 +19,21 @@ ul {
 }
 .head .head-left {
       float: left;
+}
+.head .head-left a {
+      height: 80px;
+      display: inline-block;
+}
+.head .head-left a img{
+      height: 80px;
+}
+.head .head-left .logo{
+      position: relative;
+      top:-36px;
+      color: #00a7ff;
+      text-decoration: none;
+      font-size: 24px;
+
 }
 .head .head-right {
       overflow: hidden; 
@@ -40,23 +56,21 @@ ul {
       border-radius: 17px;
 }
 .head .head-right ul li a:hover {
-      background: #eee; 
+      background: #00b1ff;   
 }
 .head .head-right ul .active a {
       background: #00b1ff;
       color: #fff;
 }
-
-
 #fullpage  .section {
       text-align: center;
-      font: 40px "Microsoft Yahei";
+      font:bold 60px  "Microsoft Yahei" ;
       color: #285caa;
 }
 
 /* summary概述 第一屏 */
 #fullpage #summary {
-      background: url(http://120.76.115.209/css/images/summary.png) ;
+      background: url(images/summary.png) ;
       background-size: cover;
       filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/summary.png");
       /*  background-size: cover; */
@@ -72,14 +86,18 @@ ul {
       position: relative; 
       left: -120%;
 }
-#summary h3 { 
+#summary p { 
       position: relative; 
-      top: -120%;
+      left: -120%;
 }
+#summary p:nth-child(2),p:nth-child(3){
+      color: white;
+}
+
 /* 摘要第二屏 */
 
 #abstract{
-      background: url(http://120.76.115.209/css/images/abstract.png) no-repeat 0 0;
+      background: url(images/abstract.png) no-repeat 0 0;
       background-size: 100% 100%;
       /*  background-size: cover; */
       filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/abstract.png");
@@ -87,24 +105,85 @@ ul {
 
 /* 传感器第三屏 */
 
+#sensor div {  
+      font-size: 20px;
 
+}
+#sensor ul {
+      margin-top:120px;
+
+
+}
+#sensor ul li {
+      margin:0 20px;
+      width: 230px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 15px;
+      border: 2px solid #285caa;
+      font-size: 20px;
+      display: inline-block;
+      list-style-type: none;
+      cursor: pointer;
+  
+}
+
+#sensor ul li.active {
+      background: #285caa;
+      color:white; 
+}
+
+#sensor .fp-tableCell>div {
+      height: 480px;
+      line-height: 32px; 
+}
+/* sensor-left */
+#sensor .fp-tableCell .sensor-left {
+      width: 480px;
+      margin: auto;
+
+}
+
+#sensor .sensor-left ~ div {
+      display: none;
+}
+/* sensor-cen*/
+#sensor .sensor-cen {
+      width:900px;
+     margin:20px auto;
+        
+}
+#sensor .sensor-right,.sensor-cen {
+      margin-top: 20px;
+}
+/* sensor-right */
+#sensor .sensor-right li{
+      text-align: left;
+      list-style-type: none;
+      width: 800px;
+      margin:auto;
+
+
+}
 /* 客户端 第四屏*/
-#client {
-      background: url(http://120.76.115.209/css/images/client.png) no-repeat 0 0;
-      background-size: 100% 100%;
-      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/client.png");
+#pc-client {
+     margin-top: 60px;
+    /*  background: url(http://120.76.115.209/css/images/client.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/client.png"); */
 
 }
 
 /* zigbee区域 第五屏*/
 
 #fullpage #zigbee{
-      background: url(http://120.76.115.209/css/images/zigbee.png) no-repeat 0 0;
+      background: url(images/zigbee.png) no-repeat 0 0;
       background-size: 100% 100%;
       font-size: 16px;
       filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/zigbee.png");
 
 }
+
 #zigbee ul { 
       margin: 100px 100px 0px 100px; 
        position: relative;
@@ -123,14 +202,14 @@ ul {
       clear: both;
 }
 #zigbee ul li {
-      margin-left: 116px;
+      margin:0 20px;
       width: 230px;
       height: 40px;
       line-height: 40px;
       border-radius: 15px;
       border: 2px solid #285caa;
       font-size: 20px;
-      float: left;
+      display: inline-block;
       list-style-type: none;
       cursor: pointer;
 }
@@ -147,7 +226,8 @@ ul {
       height:420px;
       text-align: left;
       position: relative;
-      bottom:-120%;
+      bottom:-140%;
+      line-height: 32px; 
 }
 #zigbee .zigbeeAbout>div {
       width: 480px;
@@ -161,7 +241,7 @@ ul {
 
 /* cloud区域  第六屏*/
 #cloud{
-      background: url(http://120.76.115.209/css/images/cloud.png) no-repeat 0 0;
+      background: url(images/cloud.png) no-repeat 0 0;
       background-size: 100% 100%;
       filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/cloud.png");
 }
@@ -189,6 +269,7 @@ ul {
       font-size: 20px;
       height:420px;
       text-align: left;
+      line-height: 32px; 
      
 
 
@@ -200,3 +281,22 @@ ul {
       list-style: none;
  
 }
+
+/* 安卓区域 */
+#android{
+       background: url(images/android.png) no-repeat 0 10px;
+      background-size: 100% 100%;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=Enabled, sizingMethod="scale" , src="http://120.76.115.209/css/images/cloud.png");
+}
+#android>div{
+       color: black;
+      font-size: 14px;
+     vertical-align: bottom;
+
+}
+#android>div a{
+       color: black;
+       text-decoration: none;
+
+}
+
